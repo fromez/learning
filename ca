@@ -1,0 +1,29 @@
+import random
+random_number = random.randint (1,12)
+weight = random_number
+
+if weight <= 2:
+  cost = weight * 1.5 + 20
+elif weight > 2 and weight <= 6:
+  cost = weight * 3 + 20
+elif weight >= 7 and weight <= 10:
+  cost = weight * 4 + 20
+else:
+  cost = weight * 4.75 + 20
+print("Normal Shipping")
+print ("The weight is: " + str(weight) + " ,and it's cost would be: " + str(cost))
+
+#Now we are going to do the same but with gorund shipping premium
+weight = random_number
+premium_ground = 125
+print("Ground Shipping Premium $", premium_ground)
+if weight >= 2:
+  cost = weight * 4.50 
+elif weight > 2 and weight <= 6:
+  cost = weight * 9 
+elif weight > 6 and weight <= 10:
+  cost = weight2 * 12
+else:
+  cost = weight * 14.25
+ 
+print ("The weight is: " + str(weight) + " ,and it's cost in Ground Shipping would be: " + str(cost))
